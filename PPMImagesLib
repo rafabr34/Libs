@@ -1,6 +1,9 @@
 local PPMImages = {}
 local MainString = ""
-function PPMImages.StartPPMFile(SizeX,SizeY)
+local MainFileName = ""
+function PPMImages.StartPPMFile(SizeX,SizeY,FileName)
+MainFileName = FileName
+writefile(tostring(FileName) .. ".ppm",MainString)
 local RequiredPixels = SizeX * SizeY
 MainString = MainString .. "P3\n" .. tostring(SizeX) .. "\n" .. tostring(SizeY) .. "\n" .. "255"
 return RequiredPixels
@@ -8,7 +11,9 @@ end
 function PPMImages.AddPixel(R,G,B)
 MainString = MainString .. "\n" .. tostring(R) .. " " .. tostring(G) .. " " .. tostring(B)
 end
-function PPMImages.Finish(FileName)
-writefile(tostring(FileName) .. ".ppm",MainString)
+function PPMImages.DumpTable()
+local Readed = readfile(MainFileName .. ".ppm")
+writefile(MainFileName .. ".ppm",Readed .. MainString)
+MainString = ""
 end
 return PPMImages
