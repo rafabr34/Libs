@@ -4,7 +4,7 @@ local MainFileName = ""
 function PPMImages.StartPPMFile(SizeX,SizeY,FileName)
 MainFileName = FileName
 writefile(tostring(FileName) .. ".ppm",MainString)
-local RequiredPixels = SizeX * SizeY
+local RequiredPixels = SizeX * SizeY + 1
 MainString = MainString .. "P3\n" .. tostring(SizeX) .. "\n" .. tostring(SizeY) .. "\n" .. "255"
 return RequiredPixels
 end
