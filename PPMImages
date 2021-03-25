@@ -1,0 +1,14 @@
+local PPMImages = {}
+local MainString = ""
+function PPMImages.StartPPMFile(SizeX,SizeY)
+local RequiredPixels = SizeX * SizeY
+MainString = MainString .. "P3\n" .. tostring(SizeX) .. "\n" .. tostring(SizeY) .. "\n" .. "255"
+return RequiredPixels
+end
+function PPMImages.AddPixel(R,G,B)
+MainString = MainString .. "\n" .. tostring(R) .. " " .. tostring(G) .. " " .. tostring(B)
+end
+function PPMImages.Finish(FileName)
+writefile(tostring(FileName) .. ".ppm",MainString)
+end
+return PPMImages
