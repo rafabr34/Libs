@@ -1,0 +1,25 @@
+local P3PPMWriter = {}
+
+local MainString = ""
+local ExtraMainString = ""
+function P3PPMWriter.CreateHeader(SizeX,SizeY)
+local HeaderString = ""
+HeaderString = string.char(80,54,10) .. tostring(SizeX) .. string.char(32) .. tostring(SizeY) .. string.char(10) .. "255" .. string.char(10)
+MainString = MainString .. HeaderString
+return SizeY * SizeX
+end
+function P3PPMWriter.AddPixel(R,G,B)
+MainString = MainString .. string.char(R) .. string.char(G) .. string.char(B)
+end
+function P3PPMWriter.DumpString()
+ExtraMainString = ExtraMainString .. MainString
+MainString = ""
+end
+function P3PPMWriter.ResetString()
+MainString = ""
+ExtraMainString = ""
+end
+function P3PPMWriter.GetString()
+return ExtraMainString
+end
+return P3PPMWriter
