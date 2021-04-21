@@ -64,11 +64,11 @@ Label Functions:
  :Toggle(<Bool>) Sets If The Label Is Visible
  
  
- Button Options:
+Button Options:
   Text <String> 
   Callback <Function> Defines The Function It Will Use For Callback, Returns: <Void>
   
- Button Functions:
+Button Functions:
   :UpdateText(<String>) Sets A New Button Text
   :ForceFire() Fires The Connected Function
   :Disconnect() Desconnect The Function
@@ -77,7 +77,7 @@ Label Functions:
   :Toggle(<Bool>) Toggles If The Button Is Visible Or Not
   
   
- Toggle Options:
+Toggle Options:
   Text <String> Defines The Text Off The Toggle
   Callback <Function> Defines The Function It Will Use For Callback, Returns: <Bool>
  
@@ -87,14 +87,14 @@ Label Functions:
   :LockToggle(<Bool>) Locks The Toggle To Its Current State (SetState Can Still Be Used)
   
   
- ViewportFrame Options:
+ViewportFrame Options:
   SizeY <Int> Defines The Y Size Off The ViewportFrame
   UserAbsoluteControl <Bool> Defines If The User Can Move The Camera
   Items <Table> Defines The Items That Will Be Showed In The ViewportFrame
   ShowZoomLabel <Bool> Defines If The Zoom Label Is Visible
   RotateCameraWhenIdle <Bool> Defines If The Camera Can Rotate When The User Mouse Is Outside The Frame
   
- ViewportFrame Functions:
+ViewportFrame Functions:
   :Toggle(<Bool>) Defines If The ViewportFrame Will Be Visible Or Not
   :ClearModel() Clears All Items in The ViewPort
   :SetItems(<Table>) Set The Items In The Model
@@ -104,13 +104,13 @@ Label Functions:
   :SetZoom(<Int>) Sets The Current Zoom
   
   
- Dropdown Options:
+Dropdown Options:
   PlaceHolderText <String> Defines The Text When Nothing Is Selected
   Callback <Function> Defines The Function It Will Use For Callback, Returns: <String>
   Text <String> Defines The Text When Something Is Selected
   Options <Table> Sets The Options
   
- Dropdown Functions:
+Dropdown Functions:
  :Update(<Table>) Updates All Items With the New Table
  :Add(<String>) Adds A Item
  :Clear() Clear All Items
@@ -120,3 +120,19 @@ Label Functions:
  :Toggle(<Bool>) Defines If The Dropdown Will Be Visible Or Not
  
  
+Slider Options:
+  Text <String> Defines The Text Of The Slider
+  Min <Int> Defines The Min Value
+  Max <Int> Defines The Max Value
+  Callback <Function> Defines The Function It Will Use For Callback, Returns: <Number>
+
+Slider Functions:
+  <String> .GetText() Returns The  Current Text
+  .SetText(<String>) Sets The  Current Text
+  <Number> .GetValue() Returns The  Current Value
+
+
+TextBox Options
+PlaceholderText <String> Defines The PlaceholderText
+Text <String> Defines The Text
+Callback <Function> Defines The Function It Will Use For Callback, Returns: <String>,<Bool>,<KeyInputInstance>
