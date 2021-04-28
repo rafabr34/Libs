@@ -85,7 +85,7 @@ Toggle Options:
   :SetState(<Bool>) Sets The Toggled State
   :Toggle(<Bool>) Defines If The Toggle Button Will Be Visible Or Not
   :LockToggle(<Bool>) Locks The Toggle To Its Current State (SetState Can Still Be Used)
-  
+  :SetStateNoCallback(<Bool>) Sets The Toggled State But Without Callback
   
 ViewportFrame Options:
   SizeY <Int> Defines The Y Size Off The ViewportFrame
