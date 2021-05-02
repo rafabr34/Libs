@@ -86,6 +86,8 @@ Toggle Options:
   :Toggle(<Bool>) Defines If The Toggle Button Will Be Visible Or Not
   :LockToggle(<Bool>) Locks The Toggle To Its Current State (SetState Can Still Be Used)
   :SetStateNoCallback(<Bool>) Sets The Toggled State But Without Callback
+  :UpdateText(<String>) Sets The Toggle Text
+  <String> :GetText() Returns The Current Text
   
 ViewportFrame Options:
   SizeY <Int> Defines The Y Size Off The ViewportFrame
@@ -114,7 +116,7 @@ Dropdown Functions:
  :Update(<Table>) Updates All Items With the New Table
  :Add(<String>) Adds A Item
  :Clear() Clear All Items
- :SetText(<String>) Sets The Main Text (Wont Overwrite The "Text" Option)
+ :UpdateText(<String>) Sets The Main Text (Wont Overwrite The "Text" Option)
  :GetText() Returns The Text
  :GetSelected() Returns The Current Text
  :Toggle(<Bool>) Defines If The Dropdown Will Be Visible Or Not
@@ -127,12 +129,12 @@ Slider Options:
   Callback <Function> Defines The Function It Will Use For Callback, Returns: <Number>
 
 Slider Functions:
-  <String> .GetText() Returns The  Current Text
-  .SetText(<String>) Sets The  Current Text
-  <Number> .GetValue() Returns The  Current Value
+  <String> :GetText() Returns The  Current Text
+  :UpdateText(<String>) Sets The  Current Text
+  <Number> :GetValue() Returns The  Current Value
 
 
 TextBox Options
-PlaceholderText <String> Defines The PlaceholderText
-Text <String> Defines The Text
-Callback <Function> Defines The Function It Will Use For Callback, Returns: <String>,<Bool>,<KeyInputInstance>
+  PlaceholderText <String> Defines The PlaceholderText
+  Text <String> Defines The Text
+  Callback <Function> Defines The Function It Will Use For Callback, Returns: <String>,<Bool>,<KeyInputInstance>
