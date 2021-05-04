@@ -33,7 +33,8 @@
      .ToggleShowGuiButton(<Bool>)  Defines If The Toggle Gui Button Will Be Visible
      .SetCanDrag(<Bool>)  Defines If The User Can Drag The Gui
      .ToggleWindow(<Bool>) Defines If The Window Is Visible
-     <Table> .NewTab(<Table>)  Creates A New Tab
+     <Table> .Notify(<Table>) Notify The User
+     <Table> .NewTab(<Table>) Creates A New Tab
 
     IF Effect Setted To Bubbles: 
       .ClearBubbles()  Clear All Bubbles
@@ -41,10 +42,19 @@
       .SetBubblesOptions(<Table>)  Changes All Options Except Type Option
 
 
-
+Window.Notify Table Options
+  Title <String> 
+  Text <String>
+  Timeout <Int> 0 For No Timeout
+  ReplicateEffects <Bool> 
+  TimeoutAnimationType <Int>
+  Button1 <Table> {Text <String>,Callback <Function>}
+  Button2 <Table> {Text <String>,Callback <Function>}
+  Button3 <Table> {Text <String>,Callback <Function>}
+  ScreenSide <String> ("BottomLeft","BottomRight","TopLeft","TopRight")
 
 Window.NewTab Table Options
- TabName <String> {The Name Of The New Tab}
+ TabName <String> The Name Of The New Tab
    
 Window.NewTab Functions
  <Table> .Label(<Table>)
