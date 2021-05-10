@@ -149,8 +149,6 @@
     Title <String> 
     Text <String>
     Timeout <Int> 0 For No Timeout Or A Undefined Time Notification
-    ReplicateEffects <Bool> 
-    TimeoutAnimationType <Int>
     Button1 <Table> {Text <String>,Callback <Function>}
     Button2 <Table> {Text <String>,Callback <Function>}
     Button3 <Table> {Text <String>,Callback <Function>}
