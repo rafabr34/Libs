@@ -148,7 +148,8 @@
   
     Title <String> The Notification Title
     Text <String> The Notification Description Or Text
-    Timeout <Int> 0 For No Timeout Or A Undefined Time Notification
+    Timeout <Int> 0 For A Undefined Time Notification, -1 For A Non Time/Pending Animation/Behavior Notification
+    OnTimeout <Function> The Function It Will Call On Timeout
     Button1 <Table> Button1 Used In Callback nil For None {Text <String>,Callback <Function>}
     Button2 <Table> Button2 Used In Callback nil For None {Text <String>,Callback <Function>}
     Button3 <Table> Button3 Used In Callback nil For None {Text <String>,Callback <Function>}
