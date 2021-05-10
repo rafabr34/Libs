@@ -148,9 +148,22 @@
   
     Title <String> The Notification Title
     Text <String> The Notification Description Or Text
-    Timeout <Int> 0 For A Undefined Time Notification, -1 For A Non Time/Pending Animation/Behavior Notification
+    
+    Timeout <Int> 
+    0 For A Undefined Time Notification,
+    -1 For A Non Time/Pending Animation/Behavior Notification,
+    -10 For A Loading Type Based In Percentage (To Update Use The .UpdatePercentage(<Float> Current,<Float> Target) Function)
+    
     OnTimeout <Function> The Function It Will Call On Timeout
     Button1 <Table> Button1 Used In Callback nil For None {Text <String>,Callback <Function>}
     Button2 <Table> Button2 Used In Callback nil For None {Text <String>,Callback <Function>}
     Button3 <Table> Button3 Used In Callback nil For None {Text <String>,Callback <Function>}
     ScreenSide <String> The Side Of The Screen The Notification Will Spawn ("BottomLeft","BottomRight","TopLeft","TopRight")
+    
+    
+  NilUiLib.Notify Functions
+    .StopAllAnimations()
+    .UpdatePercentage(<Float> Current,<Float> Target)
+    .ClearNotif()
+    :UpdateText(<String>)
+    :UpdateTitle(<String>)
