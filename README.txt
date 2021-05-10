@@ -1,5 +1,9 @@
 # NilUiLib Docs
 
+## Not Added Yet
+### May Add
+
+
 
   <Table> NilUiLib.Window(<Table>) Creates A New Window
 
@@ -155,14 +159,12 @@
     -10 For A Loading Type Based In Percentage (To Update Use The .UpdatePercentage(<Float> Current,<Float> Target) Function)
     
     OnTimeout <Function> The Function It Will Call On Timeout
-    Button1 <Table> Button1 Used In Callback nil For None {Text <String>,Callback <Function>}
-    Button2 <Table> Button2 Used In Callback nil For None {Text <String>,Callback <Function>}
-    Button3 <Table> Button3 Used In Callback nil For None {Text <String>,Callback <Function>}
+    ##Button1 <Table> Button1 Used In Callback nil For None {Text <String>,Callback <Function>}
+    ##Button2 <Table> Button2 Used In Callback nil For None {Text <String>,Callback <Function>}
+    ##Button3 <Table> Button3 Used In Callback nil For None {Text <String>,Callback <Function>}
     ScreenSide <String> The Side Of The Screen The Notification Will Spawn ("BottomLeft","BottomRight","TopLeft","TopRight")
-    OnOverload <Function> Defines A Function When The Notification Is Dumped
-    
-    OverloadAction <String> Defines What The Script Will Do With This Notification When Overloaded 
-    ("Delete","AddToCacheWaitValidPlace")
+    ##OnOverload <Function> Defines A Function When The Notification Is Dumped
+
     
   NilUiLib.Notify Functions
     .StopAllAnimations()
