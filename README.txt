@@ -146,10 +146,10 @@
 
   NilUiLib.Notify Table Options
   
-    Title <String> 
-    Text <String>
+    Title <String> The Notification Title
+    Text <String> The Notification Description Or Text
     Timeout <Int> 0 For No Timeout Or A Undefined Time Notification
-    Button1 <Table> {Text <String>,Callback <Function>}
-    Button2 <Table> {Text <String>,Callback <Function>}
-    Button3 <Table> {Text <String>,Callback <Function>}
-    ScreenSide <String> ("BottomLeft","BottomRight","TopLeft","TopRight")
+    Button1 <Table> Button1 Used In Callback nil For None {Text <String>,Callback <Function>}
+    Button2 <Table> Button2 Used In Callback nil For None {Text <String>,Callback <Function>}
+    Button3 <Table> Button3 Used In Callback nil For None {Text <String>,Callback <Function>}
+    ScreenSide <String> The Side Of The Screen The Notification Will Spawn ("BottomLeft","BottomRight","TopLeft","TopRight")
