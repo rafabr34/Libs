@@ -168,7 +168,7 @@
     
   NilUiLib.Notify Functions
     .StopAllAnimations()
-    .UpdatePercentage(<Float> Current,<Float> Target)
+    .SetPercentage(<Float> Current,<Float> Target)
     .ClearNotif()
     :UpdateText(<String>)
     :UpdateTitle(<String>)
