@@ -104,10 +104,12 @@
   ViewportFrame Functions:
     :Toggle(<Bool>) Defines If The ViewportFrame Will Be Visible Or Not
     :ClearModel() Clears All Items in The ViewPort
-    :SetItems(<Table>) Set The Items In The Model
+    :CloneAndSetItems(<Table>) Clones Set The Items In The Model
     :SetSensibility(<Int>) Sets The Move Arrows Sensibility
     :GetSensibility() Returns The Sensibility
     :GetZoom() Returns The Current Zoom
+    :GetViewportFrameInstance() Returns The Actual ViewportFrame WARNING: If You Modify It, It Can Make An Exeption Or Stop Working
+    :GetViewportModel() Returns The Model That All Cloned Intances Are Saved
     :SetZoom(<Int>) Sets The Current Zoom
 
 
